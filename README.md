@@ -20,7 +20,3 @@ for the now the console contains the following commands
 - shaw - Prints the string representation of an instance based on the class name and id
 - update - update an instance based on the class name and idby adding or updating attributes(save the changes to JSON file)
 - all - Print all string representation of instances based or not on the class name
-
-# AUTHORS
-- Otto Augustion Nyongole
-- Angelah Maweu
