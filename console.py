@@ -10,3 +10,12 @@ class HBNBCommand(cmd.Cmd):
         """quit the command prompt"""
         return True
 
+    def do_EOF(self, arg):
+        """
+        EOF signal to quit the console.
+        """
+        print("")
+        return True
+
+if __name__=="__main__":
+    HBNBCommand().cmdloop
