@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Base model class"""
-
+import models
 import uuid
 import datetime
 
@@ -27,7 +27,7 @@ class BaseModel():
                 self.created_at = datetime.now()
                 self.updated_at = self.created_at
                 models.storage.new(self)
-                models-storage.save()
+                models.storage.save()
     def __str__(self):
         """Return the print presentation of the base model"""
         clname = self.__class__.__name__
