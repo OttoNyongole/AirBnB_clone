@@ -3,7 +3,7 @@
 
 from models.base_module import BaseModel
 
-class place(BaseModel):
+class Place(BaseModel):
     """
     Public class attributes:
     city_id(str): it will e the city.id
