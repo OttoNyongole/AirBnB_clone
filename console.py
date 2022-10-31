@@ -12,8 +12,10 @@ from models.review import Review
 import shlex
 from models.user import User
 
+
 class HBNBCommand(cmd.Cmd):
-     """method to quit the command line interpreter
+     """
+     method to quit the command line interpreter
      """
      def do_quit(self, arg):
         """Quit command to exit the program"""
