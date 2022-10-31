@@ -6,7 +6,7 @@ import datetime
 
 class BaseModel():
     """Class that defines all common attributes/methods for other classes"""
-    def __init__(self, *arg, **kwargs):
+    def __init__(self, *args, **kwargs):
         """
         Args:
                 *rags any list args used
