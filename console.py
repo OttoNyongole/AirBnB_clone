@@ -18,17 +18,17 @@ class HBNBCommand(cmd.Cmd):
      def do_quit(self, arg):
         """Quit command to exit the program"""
         return True
-
-    def do_EOF(self, arg): #my friend Angelah this line has indentation error i can see it
+        
+     def do_EOF(self, arg): #my friend Angelah this line has indentation error i can see it
         """EOF signal to exit the program"""
         print("")
         return True
 
-    def emptyline(self):
+     def emptyline(self):
         """Do nothing upon receiving empty line"""
         pass
 
-    def do_create(self, arg):
+     def do_create(self, arg):
         """Usage: create <class>
         Create a new class instance and print its id.
         """
@@ -41,7 +41,7 @@ class HBNBCommand(cmd.Cmd):
             print(eval(argl[0])().id)
             storage.save()
 
-         def do_show(self, arg):
+     def do_show(self, arg):
         """Usage: show <class> <id>
         Display the string representation of a class instance of a given id.
         """
@@ -58,7 +58,7 @@ class HBNBCommand(cmd.Cmd):
         else:
             print(objdict["{}.{}".format(argl[0], argl[1])])
 
-    def do_destroy(self, arg):
+     def do_destroy(self, arg):
         """Usage: destroy <class> <id>
         Delete a class instance of a given id."""
         argl = shlex.split(arg)
@@ -75,7 +75,7 @@ class HBNBCommand(cmd.Cmd):
             del objdict["{}.{}".format(argl[0], argl[1])]
             storage.save()
 
-    def do_all(self, arg):
+     def do_all(self, arg):
         """Usage: all or all <class>
         Display string representations of all instances of a given class.
         If no class is specified, displays all instantiated objects."""
@@ -91,7 +91,7 @@ class HBNBCommand(cmd.Cmd):
                     objl.append(obj.__str__())
             print(objl)
 
-    def do_update(self, arg):
+     def do_update(self, arg):
         """Usage: update <class> <id> <attribute_name> <attribute_value>
          Update a class instance of a given id by adding or updating
         a given attribute key/value pair or dictionary."""
