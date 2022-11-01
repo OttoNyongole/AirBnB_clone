@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-"""Defines Amenity class."""
+"""This is the Amenity Module."""
+
 from models.base_model import BaseModel
 
 
 class Amenity(BaseModel):
-    """Inherits rom BaseModel represents amenities."""
-    name = ""
+    """This class represent all Amenity."""
+
+    name: str = ''
