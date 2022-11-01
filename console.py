@@ -19,23 +19,23 @@ classes = {'BaseModel': BaseModel, 'User': User, 'Place': Place,
 
 
 class HBNBCommand(cmd.Cmd):
-    """ hbnb command interpreter """
+    """hbnb command interpreter."""
     prompt = '(hbnb) '
 
     def do_EOF(self, arg):
-        """ End of file"""
+        """End of file."""
         return True
 
     def do_quit(self, arg):
-        """ exit the program"""
+        """exit the program"""
         return True
 
     def emptyline(self):
-        """dont execute nothing """
+        """dont execute nothing."""
         pass
 
     def do_create(self, args):
-        """ Creates a new instance """
+        """Creates a new instance"""
         if not (args):
             print("** class name missing **")
         elif args not in HBNBCommand.classes:
@@ -46,7 +46,7 @@ class HBNBCommand(cmd.Cmd):
             print(instance.id)
 
     def do_show(self, args):
-        """ Prints str representation of an instance """
+        """Prints str representation of an instance."""
         if not (args):
             print("** class name missing **")
         else:
@@ -63,7 +63,7 @@ class HBNBCommand(cmd.Cmd):
                 print("** no instance found **")
 
     def do_destroy(self, args):
-        """ Deletes an instance based on the class name and id """
+        """Deletes an instance based on the class name and id."""
         args = args.split()
         if not args:
             print("** class name missing **")
@@ -82,7 +82,7 @@ class HBNBCommand(cmd.Cmd):
         print("** no instance found **")
 
     def do_all(self, args):
-        """ Prints all str representation of all instances """
+        """Prints all str representation of all instances."""
         split_args = shlex.split(args)
         n_list = []
         dict_json = models.storage.all()
@@ -100,7 +100,7 @@ class HBNBCommand(cmd.Cmd):
             print(n_list)
 
     def do_update(self, args):
-        """ Updates an instance based on the class name and id """
+        """Updates an instance based on the class name and id."""
         args = args.split()
         if len(args) == 0:
             print("** class name missing **")
