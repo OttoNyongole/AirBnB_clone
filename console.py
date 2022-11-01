@@ -19,7 +19,7 @@ class HBNBCommand(cmd.Cmd):
      """
      def do_quit(self, arg):
         """Quit command to exit the program"""
-        return True
+        raise SystemExit
         
      def do_EOF(self, arg): #my friend Angelah this line has indentation error i can see it
         """EOF signal to exit the program"""
