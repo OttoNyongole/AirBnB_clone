@@ -1,0 +1,17 @@
+.places{
+    vertical-align: top-left;
+    font-size: 30px;
+    display: flex;
+}
+
+.places article li{
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #FF5A5F;
+    border-radius: 4px;
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+
+}
